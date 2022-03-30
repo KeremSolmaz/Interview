@@ -1,15 +1,15 @@
 
 
- function countnumber(orderno: any){
+ export function countnumber(orderno: any){
      
      return erat(orderno);
     }
 
-    function getMedian(Arr:number[]){
+ export function getMedian(Arr:number[]){
       return getMedian2(Arr);
      }
     
-    var erat = function(n:number) {
+    const erat = function(n:number) {
         var result = [];
         var maxlimit = Math.sqrt(n);
         var array = [];
@@ -38,7 +38,7 @@
         return i % 1 == 0 ? (arr[i - 1] + arr[i]) / 2 : arr[Math.floor(i)];
       }
 
-    var getMedian2 = function(narray:any[]){
+      const getMedian2 = function(narray:any[]){
         var toptal = narray.length;
         const mArr= [];
         var medIndex;
@@ -60,5 +60,6 @@
 
 
     exports.getMedian=getMedian;
-exports.countnumber=countnumber;
+    exports.countnumber=countnumber;
+    
 
