@@ -7,7 +7,7 @@
     "build": "tsc --project ./",
     "start:dev": "nodemon src/server.ts",
     "start:prod": "node dist/server.js",
-    "test":"mocha -r ts-node/register src/**/test.ts"
+    "test": "mocha --require ts-node/register"
   },
   "dependencies": {
     "cors": "^2.8.5",
